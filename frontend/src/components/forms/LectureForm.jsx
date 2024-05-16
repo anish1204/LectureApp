@@ -15,7 +15,7 @@ const LectureForm = () => {
     const [level, setLevel] = useState('');
     const [description, setDesc] = useState('');
     const [message, setMessage] = useState('');
-    const url = 'http://localhost:5000/lecture/addlecture';
+    const url = `${process.env.REACT_APP_API_KEY}/lecture/addlecture`;
 
 
     const handleSubmit = async (e) => {

@@ -14,8 +14,7 @@ const Courses = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    console.log('Working');
-    axios.get('http://localhost:5000/course/courses').
+    axios.get(`${process.env.REACT_APP_API_KEY}/course/courses`).
       then((response) => {
         setItems(response.data.Data)
       }).catch((e) => {

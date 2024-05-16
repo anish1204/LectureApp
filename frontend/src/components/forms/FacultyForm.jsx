@@ -11,7 +11,7 @@ const FacultyForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/faculty/addteacher', { name: name, fid: id })
+            await axios.post(`${process.env.REACT_APP_API_KEY}/faculty/addteacher`, { name: name, fid: id })
             setMessage('Form submitted successfully');
         }
         catch (e) {

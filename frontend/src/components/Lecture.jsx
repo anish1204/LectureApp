@@ -8,7 +8,7 @@ import LecCard from './LecCard';
 const Lecture = (props) => {
     const { id } = useParams();
     const [items,setItems] = useState([]);
-    const url = 'http://localhost:5000/course/getlectures/'+id;
+    const url = `${process.env.REACT_APP_API_KEY}/course/getlectures/`+id;
     useEffect(()=>{
         axios.get(url).then((res)=>{
             setItems(res.data.Data);

@@ -1,6 +1,8 @@
 const { default: mongoose } = require("mongoose");
 const Schema = mongoose.Schema;
 
+// Courses Schema
+
 
 const CoursesSchema = new Schema({
     name:{

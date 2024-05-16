@@ -1,6 +1,8 @@
 const { default: mongoose } = require("mongoose");
 const Schema = mongoose.Schema ; 
 
+// Creating Faculty for Lectures
+
 const FacultySchema = new Schema ({
     name:{
         type:String,
@@ -12,6 +14,4 @@ const FacultySchema = new Schema ({
         unique:true
       }
 })
-
-
 module.exports = mongoose.model('Faculty',FacultySchema)

@@ -52,7 +52,7 @@ const Courses = () => {
 
 
 
-        <Link to='/'>
+        <Link to='/addCourse'>
         <IoIosAddCircle className='add-btn' width={150} height={150}  />  
         </Link>
         <Link  to='/'>

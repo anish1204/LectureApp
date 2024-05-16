@@ -1,6 +1,8 @@
 const { default: mongoose } = require("mongoose");
 const Schema = mongoose.Schema;
 
+//Schema for all Lectures to be Schedule
+
 const LectureSchema = new Schema({
     name:{
         type:String,

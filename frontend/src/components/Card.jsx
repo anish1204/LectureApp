@@ -13,10 +13,6 @@ const Card = (props) => {
               <Link to={`/viewLecture/${props.name}`}  >
               <button className='btn' >View</button>
               </Link>
-            
-                {/* <button className='btn'>Check</button>
-                <button className='btn'>Edit</button>
-                <button className='btn'>Delete</button> */}
             </div>
     </div>
   )

@@ -1,12 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
-import { IoIosAddCircle } from "react-icons/io";
 import { FaBook,FaChalkboardTeacher } from "react-icons/fa";
 import { GiTeacher } from "react-icons/gi";
 
-import Courses from './Courses'
-import Card from './Card'
 
 const Home = () => {
   return (

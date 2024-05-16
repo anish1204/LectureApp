@@ -13,19 +13,11 @@ import './Courses.css'
 const Courses = () => {
   const [items, setItems] = useState([]);
 
-//   const handleClick = async (e) => {
-    
-    
-// }
-
-
   useEffect(() => {
     console.log('Working');
     axios.get('http://localhost:5000/course/courses').
       then((response) => {
         setItems(response.data.Data)
-        console.log(response.data.Data)
-
       }).catch((e) => {
         console.log(e);
       })
@@ -43,23 +35,14 @@ const Courses = () => {
           ))
         }
       </div>
-
-
-
         <br/>
         <br/><br/>
-
-
-
-
         <Link to='/addCourse'>
         <IoIosAddCircle className='add-btn' width={150} height={150}  />  
         </Link>
         <Link  to='/'>
         <FaHome className='add-btn' />
         </Link>
-      
-
     </>
 
   )

@@ -21,15 +21,9 @@ const LectureForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            console.log({ name, faculty, fid, date, level, description });
-
-
-
             await axios.post(url,
                 { course_name: name, faculty: faculty, fid: fid, date: date, level: level, description: description }
             );
-
-
             setMessage('Form submitted successfully');
             setDesc('');
             setDate('');
@@ -38,11 +32,9 @@ const LectureForm = () => {
             setFaculty('');
         }
         catch (e) {
-
             console.log(e);
         }
     };
-
     return (
         <div>
             <h1>Form</h1>
@@ -59,7 +51,6 @@ const LectureForm = () => {
             <Link to='/'>
                 <FaHome className='add-btn' style={{marginTop:"100"}} />
             </Link>
-
         </div>
     )
 }

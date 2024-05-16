@@ -7,7 +7,7 @@ const Faculty = require('../models/FacultyModel');
 
 // adding teacher data 
 router.post('/addteacher', async (req, res) => {
-    //console.log(req.body.name);
+   
     try {
         if (!req.body.name || !req.body.fid) {
             return res.status(500).send("Facing data incomplete issues")
